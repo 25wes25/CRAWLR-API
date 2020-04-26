@@ -10,9 +10,9 @@ let drinksRouter = require('./src/routes/DrinksRouter');
 let beveragesRouter = require('./src/routes/BeveragesRouter');
 
 // Local URL
-const url = 'mongodb://127.0.0.1:27017/CRAWLR';
+// const url = 'mongodb://127.0.0.1:27017/CRAWLR';
 // Development URL
-// const url = 'mongodb+srv://Admin:admin@crawlr-cluster-abo1p.mongodb.net/test?retryWrites=true&w=majority';
+const url = 'mongodb+srv://Admin:admin@crawlr-cluster-abo1p.mongodb.net/test?retryWrites=true&w=majority';
 
 // Connect to MongoDB server
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
