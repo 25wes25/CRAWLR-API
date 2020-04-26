@@ -45,7 +45,7 @@ app.use(function(err, req, res) {
     console.log(err)
 });
 
-app.listen(port, hostname, function () {
-    console.log(`Listening at https://crawlr-mobile.herokuapp.com/`);
+app.listen(port, function () {
+    console.log(`Listening at ${port}/...`);
 });
 
