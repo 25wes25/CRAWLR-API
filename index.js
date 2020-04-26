@@ -41,6 +41,10 @@ app.use(settingsRouter);
 app.use(drinksRouter);
 app.use(beveragesRouter);
 
+app.get('/', function (req, res) {
+    res.send("CRAWLR-API")
+})
+
 app.use(function(err, req, res) {
     console.log(err)
 });
